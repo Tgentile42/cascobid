@@ -29,7 +29,7 @@
       
             
             <div class="form-box">
-                <form action="/index.html" method="">
+                <form action="/cascobid/index.html" method="">
                     <input name="user"  placeholder="Username">
                     <input type="password"  placeholder="Password">
                     <button class="btn btn-info btn-block login" type="submit">Login</button>
