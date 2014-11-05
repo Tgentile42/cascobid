@@ -51,12 +51,18 @@ body{
 
 .windowpic{
     margin-top: 160px;
+    padding-right: 0px;
 }
 .choicebtns{
-    margin-top: 130px !important;
+    margin-top: 110px !important;
+    width: 275px;
+    padding-left: 35px;
 }
 .totalList{
-    margin-top: 80px;
+    margin-top: 50px;
+    margin-bottom: 60px;
+    padding-right: 20px;
+    padding-left: 0px;
 }
 .borderleft{
     border-left: 1px solid black;
