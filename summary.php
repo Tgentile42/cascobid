@@ -117,27 +117,134 @@
         <div class="col-xs-4">
         <h4>Summary</h4>
         
-        Summary of Stuff:<br>
-        <br>
-        Summary of Stuff:<br>
-        <br>
-        Summary of Stuff:<br>
-        <br>
-        Summary of Stuff:<br>
-        </div>
-        <div class="col-sm-6">
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        Price:
-        </div>
+       <table>
+          <tr>
+          <td id ="type">Window Type: <?php
+          if(!isset($_POST['windowtype']))
+          {
+          echo " ";
+        ?><br><?php
+         }else{
+          echo $_POST['windowtype'];
+        ?><br><?php
+        }
+        ?></td></tr>
+          <tr>
+          <td id ="dims">Dimensions: <?php
+          if(!isset($_POST['dimension']))
+          {
+          echo " ";
+        ?><br><?php
+         }else{
+          echo $_POST['dimension'];
+        ?><br><?php
+        }
+        ?></td></tr>
+          <tr>
+          <td id ="finish">Finish: <?php
+          if(!isset($_POST['finish']))
+          {
+          echo " ";
+        ?><br><?php
+         }else{
+          echo $_POST['finish'];
+        ?><br><?php
+        }
+        ?></td></tr>
+          <tr>
+          <td id ="screens">Screens: <?php
+          if(!isset($_POST['screens']))
+          {
+          echo " ";
+        ?><br><?php
+         }else{
+          echo $_POST['screens'];
+        ?><br><?php
+        }
+        ?></td></tr>
+          <tr>
+          <td id ="screenColor">Screen Color: <?php
+          if(!isset($_POST['screenColor']))
+          {
+          echo " ";
+        ?><br><?php
+         }else{
+          echo $_POST['screenColor'];
+        ?><br><?php
+        }
+        ?></td></tr>
+          <tr>
+          <td id ="hardColor">Hardware Color: <?php
+          if(!isset($_POST['hardwareColor']))
+          {
+          echo " ";
+        ?><br><?php
+         }else{
+          echo $_POST['hardwareColor'];
+        ?><br><?php
+        }
+        ?></td></tr>
+          <tr>
+          <td id ="grilleSize">Grille Size: <?php
+          if(!isset($_POST['grilleS']))
+          {
+          echo " ";
+        ?><br><?php
+         }else{
+          echo $_POST['grilleS'];
+        ?><br><?php
+        }
+        ?></td></tr>
+          <tr>
+          <td id="grilleColor">Grille Color: <?php
+          if(!isset($_POST['grilleCo']))
+          {
+          echo " ";
+        ?><br><?php
+         }else{
+          echo $_POST['grilleCo'];
+        ?><br><?php
+        }
+        ?></td></tr>
+          <tr>
+          <td id ="extColor">Exterior Color: <?php
+          if(!isset($_POST['extColor']))
+          {
+          echo " ";
+        ?><br><?php
+         }else{
+          echo $_POST['extColor'];
+        ?><br><?php
+        }
+        ?></td></tr>
+          <tr>
+          <td id ="jambSize">Jamb Size: <?php
+          if(!isset($_POST['jambS']))
+          {
+          echo " ";
+        ?><br><?php
+         }else{
+          echo $_POST['jambS'];
+        ?><br><?php
+        }
+        ?></td></tr>
+          <tr>
+          <td id ="glass">Glass Type: <?php
+          if(!isset($_POST['glass']))
+          {
+          echo " ";
+        ?><br><?php
+         }else{
+          echo $_POST['glass'];
+        ?><br><?php
+        }
+        ?></td></tr>
+          <tr>
+          <td id ="total"><strong>Total:$<?php
+          echo $_POST['troll'];
+        ?>
+       <br></strong></td></tr>
+          </table>
 
       </div>
         
@@ -161,19 +268,6 @@
         <br>
         Summary of Stuff:<br>
         </div>
-        <div class="col-sm-6">
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        Price:
-        </div>
 
       </div>
         
@@ -197,25 +291,13 @@
         <br>
         Summary of Stuff:<br>
         </div>
-        <div class="col-sm-6">
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        Price:
-        </div>
 
       </div>
         
           
         </div>
       </div>
+    </div>
     </div>
     <div class="col-sm-4">
       <div class="panel panel-default" id = "panel3">
@@ -250,7 +332,7 @@ Pri duis homero cu, te sed tempor euripidis signiferumque. Dicunt utamur intelle
           <button type = "button" class = "btn btn-success">Submit</button>
       </div>
       </div>
-    </div>
+  </div>
 
   </div>
   </div>
@@ -272,5 +354,6 @@ Pri duis homero cu, te sed tempor euripidis signiferumque. Dicunt utamur intelle
             });
     });
     </script>
+
   </body>
 </html>
