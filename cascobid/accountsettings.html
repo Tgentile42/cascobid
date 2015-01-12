@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Casco </title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/accountsettings.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+  </head>
+  
+  <body>
+    <nav class="navbar navbar-default" role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      
+      <img   id="logo" src="cascopng.png"> 
+      
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      
+      
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown-hover">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"> Quotes <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="/cascobid/index.html">New</a></li>
+            <li><a href="/cascobid/quotes.html">Search</a></li>
+            
+          </ul>
+        </li>
+
+        <li class="dropdown-hover">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"> Customers <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="/cascobid/newcustomer.html">New</a></li>
+            <li><a href="/cascobid/customers.html">Search</a></li>
+            
+          </ul>
+        </li>
+        <li class="dropdown-hover">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+            
+                        Account
+                        <b class ="caret"></b>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <div class="navbar-login">
+                                <div class="row">
+                                    <div class="col-sm-4 ">
+                                        <p class="text-center">
+                                            <span class="glyphicon glyphicon-user icon-size"></span>
+                                        </p>
+                                    </div>
+                                    <div class="col-sm-8">
+                                        <p class="text-left"><strong>Tony Gentile</strong></p>
+                                        <p class="text-left small">me@vishrutdixit.com</p>
+                                        <p class="text-left">
+                                            <a href="#" class="btn btn-primary btn-block btn-sm">Settings</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <div class="navbar-login navbar-login-session">
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <p>
+                                            <a href="/cascobid/login.html" class="btn btn-danger btn-block">Logout</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+        
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+  </nav>
+  <div class="col-sm-12">
+  
+    <div class = "col-sm-2">
+        
+    </div>
+    <div class="col-sm-8">
+    
+        <div class="panel panel-default">
+
+            <div class="panel-body"> 
+            <div class="col-sm-6">
+            <h2>Account Settings</h2>
+                <h3>Contact Info.</h3>
+                <h5><strong>Username: </strong>agenti4</h5>
+                <h5><strong>Primary E-mail: </strong>agenti4@illinois.edu</h5>
+                <h5><strong>Work Phone: </strong>111-111-1111</h5>
+                <h5><strong>Other: </strong>904 W Green</h5>
+                
+                    <button type="button" class="btn btn-info btn-md submit">
+                    Edit
+                    </button>
+                
+                <br>
+                <br>
+                <br>
+                <h3>Change Password</h3>
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Current Password">
+                </div>
+                <br>
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="New Password">
+                </div>
+                <br>
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Confirm New Password">
+                </div>
+                <br>
+                
+                    <button type="button" class="btn btn-success btn-md submit">
+                    Submit
+                    </button>
+                
+                <br>
+                <br>
+                <br>
+                
+            </div>
+            <div class="col-sm-6">
+                <h3>Personalization</h3>
+                
+                <h5><strong>Landing Page: </strong></h5>
+                <div class="dropdown">
+                    <button class="btn btn-default dropdown-toggle btn-md submit" type="button" data-toggle="dropdown">
+                    Screen Color
+                    <b class="caret"></b>
+                    </button>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
+                    </ul>
+                    </div>
+                
+                <h5><strong>Global Settings: </strong></h5>
+                    <div class="dropdown">
+                    <button class="btn btn-default dropdown-toggle btn-md submit" type="button" data-toggle="dropdown">
+                    Screen Color
+                    <b class="caret"></b>
+                    </button>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
+                    </ul>
+                    </div>
+                    <br>
+                    <br>
+                
+                <br>
+                <br>
+                
+                <h3>Markup Fee:</h3>
+          <div class="input-group inputNewCust">
+                    
+                    <input type="text" class="form-control" placeholder="Markup">
+                </div>
+          <h3>Delivery Fee:</h3>
+          <div class="input-group inputNewCust">
+                    
+                    <input type="text" class="form-control" placeholder="Delivery">
+                </div>
+                <br>
+                
+                <button type="button" class="btn btn-success btn-md submit">
+                    Submit
+                    </button>
+          </div>
+            </div>
+            </div>
+           
+       </div>  
+
+    </div>
+    <div class = "col-sm-2">
+        
+    </div>
+  </div>
+ <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bootstrap.js"></script>
+    <script> 
+       $(function(){
+        $(".dropdown-hover").hover(            
+            function() {
+                //$('.dropdown-menu', this).stop( true, true ).fadeIn("slow");
+                $(this).toggleClass('open');
+                $('b', this).toggleClass("caret caret-up");                
+            },
+            function() {
+                //$('.dropdown-menu', this).stop( true, true ).fadeOut("slow");
+                $(this).toggleClass('open');
+                $('b', this).toggleClass("caret caret-up");                
+            });
+    });
+       
+
+    </script>
+  </body>
+</html>
