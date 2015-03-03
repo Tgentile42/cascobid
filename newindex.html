@@ -1,0 +1,1052 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Casco </title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/newindex.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+  </head>
+  
+  <body>
+    <nav class="navbar navbar-default" role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      
+      <img   id="logo" src="cascopng.png"> 
+      
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      
+      
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown-hover">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"> Quotes <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="/cascobid/index.html">New</a></li>
+            <li><a href="/cascobid/quotes.html">Search</a></li>
+            
+          </ul>
+        </li>
+
+        <li class="dropdown-hover">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"> Customers <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="/cascobid/newcustomer.html">New</a></li>
+            <li><a href="/cascobid/customers.html">Search</a></li>
+            
+          </ul>
+        </li>
+        <li class="dropdown-hover">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+            
+                        Account
+                        <b class ="caret"></b>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <div class="navbar-login">
+                                <div class="row">
+                                    <div class="col-lg-4 ">
+                                        <p class="text-center">
+                                            <span class="glyphicon glyphicon-user icon-size"></span>
+                                        </p>
+                                    </div>
+                                    <div class="col-lg-8">
+                                        <p class="text-left"><strong>Tony Gentile</strong></p>
+                                        <p class="text-left lgall">me@vishrutdixit.com</p>
+                                        <p class="text-left">
+                                            <a href="/cascobid/accountsettings.html" class="btn btn-primary btn-block btn-lg">Settings</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <div class="navbar-login navbar-login-session">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <p>
+                                            <a href="/cascobid/login.html" class="btn btn-danger btn-block">Logout</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+        
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+  </nav>
+  
+  <div class="container-fluid lpadding" >
+    <div class="lpadding col-lg-12">
+      <ol class="breadcrumb">
+        <li><a href="/cascobid/global.html">Global Options</a></li>
+        <li><a href="">Configuration</a></li>
+        <li><a href ="http://tgentile42.github.io/cascobid/summary.html">Review</a></li>
+      </ol>
+      
+      <div class=" col-lg-1" >
+      </div>
+
+      <div class="col-lg-10 stardust lpadding ">
+        
+        <div class="col-lg-6"> 
+          <div class="panel-body lpadding npadbot" id = "panel1">
+          
+              <div class="panel panel-primary">
+                <div class="panel-heading">
+                      <h3 class="panel-title">Dimensions</h3>
+                      <span class="pull-right clickable" id = "span1"><i class="glyphicon glyphicon-chevron-up"></i></span>
+                </div>
+                <div class="panel-body" id="collapse">
+                  Standard Size:
+                  <select class="form-control lpadding in width " id = "dimW">
+                        <option value="W">W</option>
+                        <option value="12">12</option>
+                        <option value="14">14</option>
+                        <option value="16">16</option>
+                  </select>
+                  X
+                 <select class="form-control lpadding in width" id="dimH">
+                        <option value="H">H</option>
+                        <option value="12">12</option>
+                        <option value="14">14</option>
+                        <option value="16">16</option>
+                  </select>
+                  <br>
+                  <br>
+                  <div class="input-group">
+                  Custom Size:   
+                  <input type="text" placeholder ="Width" class="dims in" /> 
+                  X         
+                  <input type="text" placeholder ="Height" class="dims in" /> 
+                </div>
+                <br>
+                <input type="button" class="btn btn-success alignRight " id='click1' value="Next"/>
+              </div>
+
+            </div>
+
+        </div><!--end collapse-->
+        <div class="panel-body lpadding npadtop npadbot" id = "panel2" style="display:none">
+          
+              <div class="panel panel-primary">
+                <div class="panel-heading">
+                      <h3 class="panel-title">Exterior Color</h3>
+                      <span class="pull-right clickable" id="span2"><i class="glyphicon glyphicon-chevron-down"></i></span>
+                </div>
+                <div class="panel-body" id="collapse">
+                  Standard Colors:
+                  <select class="form-control lpadding in" id = "standExColor">
+                        <option value="Select...">Select...</option>
+                          <option value="White">White</option>
+                          <option value="Beige">Beige</option>
+                          <option value="Forest Green">Forest Green</option>
+                          <option value="Black">Black</option>
+                          <option value="Vanilla">Vanilla</option>
+                          <option value="Almond">Almond</option>
+                          <option value="Dark Bronze">Dark Bronze</option>
+                          <option value="Brick">Brick</option>
+                  </select>
+                  <br>
+                  <br>
+                  Estate Colors:
+                  
+                  <select class="form-control lpadding in" id = "estateExColor">
+                        <option value="Select...">Select...</option>
+                          <option value="Platinum">Platinum</option>
+                          <option value="Olive">Olive</option>
+                          <option value="Spring Green">Spring Green</option>
+                          <option value="Harbor">Harbor</option>
+                          <option value="Glacier">Glacier</option>
+                          <option value="Khaki">Khaki</option>
+                          <option value="Teal">Teal</option>
+                          <option value="Ice Blue">Ice Blue</option>
+                          <option value="Chalk">Chalk</option>
+                          <option value="Musket">Musket</option>
+                          <option value="Fern">Fern</option>
+                          <option value="Sienna">Sienna</option>
+                          <option value="Cashmere">Cashmere</option>
+                          <option value="Mocha">Mocha</option>
+                          <option value="Gunmetal">Gunmetal</option>
+                          <option value="Heather">Heather</option>
+                          <option value="Wicker">Wicker</option>
+                          <option value="Suede">Suede</option>
+                          <option value="Smoke">Smoke</option>
+                          <option value="Pebble">Pebble</option>
+                          <option value="Bronze Vein">Bronze Vein</option>
+                          <option value="Silver Vein">Silver Vein</option>
+                  </select>
+                  
+                  <br>
+                  <br>
+                  <div class="input-group">
+                  Custom Color:   
+                  <input type="text" placeholder ="Custom Color" class="in" /> 
+                </div>
+                <br>
+                <input type="button" class="btn btn-success alignRight " id='click2' value="Next"/>
+              </div>
+
+            </div>
+
+        </div><!--end collapse-->
+        <div class="panel-body lpadding npadtop npadbot" id = "panel3" style="display:none">
+          
+              <div class="panel panel-primary">
+                <div class="panel-heading">
+                      <h3 class="panel-title">Glass</h3>
+                      <span class="pull-right clickable" id = "span3"><i class="glyphicon glyphicon-chevron-down"></i></span>
+                </div>
+                <div class="panel-body" id="collapse">
+                  Glass Type:
+                  <select class="form-control lpadding in" id = "glass1">
+                          <option value="Select...">Select...</option>
+                          <option value="Low-E w/Argon">Low-E w/Argon</option>
+                          <option value="Option 2">Option 2</option>
+                          <option value="Option 3">Option 3</option>
+                          <option value="Option 4">Option 4</option>
+                  </select>
+                  <div class="checkbox">
+                    <label>
+                      <input type="checkbox" id ="glass_i89"> I89 Upgrade
+                    </label>
+                  </div>
+                  
+                  Obscured Type:
+                  <select class="form-control lpadding in" id = "glass2">
+                        <option value="Select...">Select...</option>
+                          <option value="Type 1">Type 1</option>
+                          <option value="Type 2">Type 2</option>
+                          <option value="Type 3">Type 3</option>
+                          
+                  </select>
+                  
+                  <div class="checkbox">
+                    <label>
+                      <input type="checkbox" id = "glassTemp"> Tempered
+                    </label>
+                  </div>
+                <br>
+                <input type="button" class="btn btn-success alignRight " id='click3' value="Next"/>
+              </div>
+
+            </div>
+        </div><!--end collapse-->
+        <div class="panel-body lpadding npadtop npadbot" id = "panel4" style="display:none">
+          
+              <div class="panel panel-primary">
+                <div class="panel-heading">
+                      <h3 class="panel-title">Grille</h3>
+                      <span class="pull-right clickable" id ="span4"><i class="glyphicon glyphicon-chevron-down"></i></span>
+                </div>
+                <div class="panel-body" id="collapse">
+                  Grille Type:
+                  <select class="form-control lpadding in" id = "grilleType">
+                    <option value='Select...'>Select...</option>
+                    <option value='5/8" Flat'>5/8" Flat</option>
+                    <option value='1" Contour'>1" Contour</option>
+                    <option value='SDL'>SDL</option>
+                  </select>
+                  <br>
+                  <br>
+                  Color:
+                  <select class="form-control lpadding in" id = "grilleColor">
+                        <option value="Select...">Select...</option>
+                          <option value="Solid">Solid</option>
+                          <option value="Two-Tone">Two-Tone</option>
+                  </select>
+                  <br>
+                  <br>
+                  Pattern:
+                  <select class="form-control lpadding in" id= "grillePattern">
+                        <option value="Select...">Select...</option>
+                          <option value="Colonial">Colonial</option>
+                          <option value="Prairie">Prairie</option>
+                          <option value="Arts and Crafts">Arts and Crafts</option>
+                 </select>
+                  
+                  Sash Selection:
+                  <select class="form-control lpadding in" id ="grilleSash">
+                        <option value="Select...">Select...</option>
+                          <option value="Top">Top</option>
+                          <option value="Bottom">Bottom</option>
+                          <option value="Both">Both</option>
+                 </select>
+                  <br>
+                  <br>
+                  <div class="input-group">
+                  Custom:   
+                  <input type="text" placeholder ="Custom" class="in" /> 
+                </div>
+                <br>
+                <input type="button" class="btn btn-success alignRight " id='click4' value="Next"/>
+              </div>
+
+            </div>
+        </div><!--end collapse-->
+        <div class="panel-body lpadding npadtop npadbot" id = "panel5" style="display:none">
+          
+              <div class="panel panel-primary">
+                <div class="panel-heading">
+                      <h3 class="panel-title">Jamb Size</h3>
+                      <span class="pull-right clickable" id="span5"><i class="glyphicon glyphicon-chevron-down"></i></span>
+                </div>
+                <div class="panel-body" id="collapse">
+                  <div class="radio in">
+                    <label>
+                      <input type="radio" id = "69" name = "jambS" value='6-9/16"'>6-9/16"</label>
+                  </div>
+                    <div class="radio in">
+                    <label>
+                      <input type="radio" id = "49" name="jambS" value='4-9/16"'>4-9/16"</label>
+                  </div>
+
+                  <div class="input-group">
+                  Custom:   
+                  <input type="text" placeholder ="Custom" class="in" /> 
+                </div>
+                <br>
+                <input type="button" class="btn btn-success alignRight " id='click5' value="Next"/>
+              </div>
+            </div>
+        </div><!--end collapse-->
+        <div class="panel-body lpadding npadtop npadbot" id = "panel6" style="display:none">
+          
+              <div class="panel panel-primary">
+                <div class="panel-heading">
+                      <h3 class="panel-title">Screen Color</h3>
+                      <span class="pull-right clickable" id="span6"><i class="glyphicon glyphicon-chevron-down"></i></span>
+                </div>
+                <div class="panel-body" id="collapse">
+                 Color:
+                  <select class="form-control lpadding in" id ="screenColor">
+                        <option value="Select...">Select...</option>
+                          <option value="White">White</option>
+                          <option value="Beige">Beige</option>
+                          <option value="Forest Green">Forest Green</option>
+                          <option value="Black">Black</option>
+                          <option value="Vanilla">Vanilla</option>
+                          <option value="Almond">Almond</option>
+                          <option value="Dark Bronze">Dark Bronze</option>
+                          <option value="Brick">Brick</option>
+                  </select>
+                  <br>
+                  <br>
+
+                  Screen Selection:
+                  <select class="form-control lpadding in" id = "screenPattern">
+                        <option value="Select...">Select...</option>
+                          <option value="Standard">Standard</option>
+                          <option value="Bettervue">Bettervue</option>
+                          <option value="PetScreen">PetScreen</option>
+                 </select>
+                  <br>
+                  <br>
+                  <input type="button" class="btn btn-success alignRight " id='click6' value="Next"/>
+              </div>
+            </div>
+        </div><!--end collapse-->
+        <div class="panel-body lpadding npadtop npadbot" id = "panel7" style="display:none">
+          
+              <div class="panel panel-primary">
+                <div class="panel-heading">
+                      <h3 class="panel-title ">Hardware Color</h3>
+                      <span class="pull-right clickable" id="span7"><i class="glyphicon glyphicon-chevron-down"></i></span>
+                </div>
+                <div class="panel-body" id="collapse">
+                <h4>Hardware Color:</h4>
+                      Standard:
+                      <select class="form-control lpadding in" id = "hardColorStand">
+                        <option value="Select...">Select...</option>
+                          <option value="Beige">Beige</option>
+                          <option value="Coppertone">Coppertone</option>
+                          <option value="White">White</option>
+                          
+                 </select>
+                      Specialty:
+                      <select class="form-control lpadding in" id = "hardColorSpecial">
+                        <option value="Select...">Select...</option>
+                          <option value="Oil Rubbed Bronze">Oil Rubbed Bronze</option>
+                          <option value="Satin Nickel">Satin Nickel</option>
+                          <option value="Brass">Brass</option> 
+                 </select>
+                 <br>
+                 <br>
+                 <input type="button" class="btn btn-success alignRight " id='click7' value="Next"/>
+              </div>
+            </div>
+        </div><!--end collapse-->
+        <div class="panel-body lpadding npadtop npadbot" id = "panel8" style="display:none">
+          
+              <div class="panel panel-primary">
+                <div class="panel-heading">
+                      <h3 class="panel-title">Interior Prefinishing</h3>
+                      <span class="pull-right clickable" id="span8"><i class="glyphicon glyphicon-chevron-down"></i></span>
+                </div>
+                <div class="panel-body" id="collapse">
+                <h4>Finish:</h4>
+              Prime and Paint
+              <select class="form-control lpadding in" id = "intPrime">
+                        <option value="Select...">Select...</option>
+                        <option value="Standard White">Standard White</option>
+                        <option value="Custom">Custom</option>   
+              </select>
+              Standard Stains:
+              <select class="form-control lpadding in" id = "intStains">
+                        <option value="Select...">Select...</option>
+                          <option value="Option 1">Option 1</option>
+                          <option value="Option 2">Option 2</option>
+                          <option value="Option 3">Option 3</option>
+                          <option value="Option 4">Option 4</option>
+                 </select>
+                 <br>
+                 <br>
+                <input type="button" class="btn btn-success alignRight " id='click8' value="Next"/>
+              </div>
+            </div>
+        </div><!--end collapse-->
+        <div class="panel-body lpadding npadtop npadbot" id = "panel9" style="display:none">
+          
+              <div class="panel panel-primary">
+                <div class="panel-heading">
+                      <h3 class="panel-title">Installation</h3>
+                      <span class="pull-right clickable" id ="span9"><i class="glyphicon glyphicon-chevron-down"></i></span>
+                </div>
+                <div class="panel-body" id="collapse">
+                  <div class="checkbox">
+                    <label>
+                      <input type="checkbox" id = "nailFin"> Nail Fin Applied
+                    </label>
+                  </div>
+                  Other:
+                  <select class="form-control lpadding in" id = "install1">
+                        <option value="Select...">Select...</option>
+                          <option value="Brickmold w/Fin">Brickmold w/Fin</option>
+                          <option value="Brickmold w/out Fin">Brickmold w/out Fin</option>
+                          <option value='4" Panning'>4" Panning</option>
+                          <option value='1-7/8" Panning'>1-7/8" Panning</option>
+                          <option value="None">None</option>
+                          
+                 </select>
+                  
+                  Masonry Strap:
+                  <select class="form-control lpadding in" id = "installMeasure">
+                        <option value="Select...">Select...</option>
+                          <option value='7"'>7"</option>
+                          <option value='9"'>9"</option>
+                          <option value='11"'>11"</option>
+                 </select>
+                  <br>
+                  <br>
+                  <input type="button" class="btn btn-success alignRight " id='click9' value="Next"/>
+              </div>
+            </div>
+        </div><!--end collapse-->
+       <div class = "button in padb">
+          <button type = "button" class = "btn btn-success">Add Additional Items</button>
+      </div>
+      <div class = "button in padb">
+      
+          <button type = "button" class = "btn btn-success" id ="add_row">Add to Order</button>
+      </div>       
+      </div>
+
+      <div class="col-lg-6 stardust windowpic">
+        <img src="300400.png">
+        <br>
+        <br>
+        <h4>Window Label</h4>
+        <textarea class="form-control" rows="4" placeholder="Enter Window Label Here..." style="width:300px;" name = "window1" id="windowLabel"></textarea>
+      </div>
+      </div>
+      <div class="col-lg-1">
+
+      </div>
+
+
+    </div>
+  <div class="lpadding col-lg-1">
+  </div>
+  <div class="col-lg-10 stardust reviewPanel container-fluid">
+  <h3>Current Items</h3>
+
+  <br>
+  <br>
+      <table class="table table-bordered table-hover" id="tab_logic" style="overflow: auto">
+        <thead>
+          <tr >
+          <th class="text-center" style = "width:35px">
+            Q
+            </th>
+            <th class="text-center" style = "width:6%">
+              Dimensions
+            </th>
+            <th class="text-center" style = "width:10%">
+              Exterior Color
+            </th>
+            <th class="text-center" style = "width:10%">
+              Glass
+            </th>
+            <th class="text-center" style = "width:10%">
+              Grille
+            </th>
+            <th class="text-center" style = "width:10%">
+              Jamb Size
+            </th>
+            <th class="text-center" style = "width:10%">
+              Screen Color
+            </th>
+            <th class="text-center" style = "width:10%">
+              Harware Color
+            </th>
+            <th class="text-center" style = "width:10%">
+              Interior Prefinishing
+            </th>
+            <th class="text-center" style = "width:10%">
+              Installation
+            </th>
+            <th class="text-center" style = "max-width:10%">
+              Label
+            </th>
+                <th class="text-center" style="border-top: 1px solid #ffffff; border-right: 1px solid #ffffff;">
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+            <tr id='addr0' data-id="0" class="hidden">
+            <td data-name="quantity" id = "quant">
+            <input type="text" name = "quant0" id ="quantid0" placeholder = "" style="width: 25px"></input>
+            <input type="text" id = "price" class="hidden"></input>
+            </td>
+
+            <td data-name="dims" id = "dims" style="width: 6%">
+            </td>
+
+            <td data-name="extCol">    
+            </td>
+
+            <td data-name="glass">
+            </td>
+
+            <td data-name="grille">    
+            </td>
+
+            <td data-name="jambSi">    
+            </td>
+
+            <td data-name="screenCol">    
+            </td>
+
+            <td data-name="hardCol">    
+            </td>
+
+            <td data-name="intPre" >    
+            </td>
+
+            <td data-name="install">    
+            </td>
+
+            <td data-name="notes">
+            <input type="text" id = "price" class="hidden"></input>
+            </td>
+            
+            <td data-name="del">
+                <button name="del0" class='btn btn-danger glyphicon glyphicon-remove row-remove'></button>
+
+                <button name="del0" class='btn btn-success glyphicon glyphicon-edit row-edit'></button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+  
+  </div>
+  <div class ="lpadding col-lg-1">
+  </div>
+  </div>
+  <div class="lpadding col-lg-1">
+  
+</div>
+<div class = " stardust col-lg-10">
+<h4 id = "priceArea">Price:</h4>
+</div>
+<div class ="lpadding col-lg-1">
+
+</div>
+  </div> 
+  </div> 
+  
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bootstrap.js"></script>
+    <script> 
+       $(function(){
+        $(".dropdown-hover").hover(            
+            function() {
+                //$('.dropdown-menu', this).stop( true, true ).fadeIn("slow");
+                $(this).toggleClass('open');
+                $('b', this).toggleClass("caret caret-up");                
+            },
+            function() {
+                //$('.dropdown-menu', this).stop( true, true ).fadeOut("slow");
+                $(this).toggleClass('open');
+                $('b', this).toggleClass("caret caret-up");                
+            });
+    });
+       
+
+    </script>
+    <script type="text/javascript">
+    $(document).on('click', '.panel-heading span.clickable', function(e){
+    var $this = $(this);
+  if(!$this.hasClass('panel-collapsed')) {
+    $this.closest('.panel').find('.panel-body').slideUp();
+    $this.addClass('panel-collapsed');
+    $this.find('i').removeClass('glyphicon-chevron-up').addClass('glyphicon-chevron-down');
+  } else {
+    $this.closest('.panel').find('.panel-body').slideDown();
+    $this.removeClass('panel-collapsed');
+    $this.find('i').removeClass('glyphicon-chevron-down').addClass('glyphicon-chevron-up');
+  }
+})
+  </script>
+  <script type="text/javascript">
+$(document).ready(function() {
+    var price = 0;
+    $("#add_row").on("click", function() {
+      var thisWindowPrice = 0;
+        // Dynamic Rows Code
+        
+        // Get max row id and set new id
+        
+        
+        var newid = 0;
+        $.each($("#tab_logic tr"), function() {
+            if (parseInt($(this).data("id")) > newid) {
+                newid = parseInt($(this).data("id"));
+            }
+        });
+        newid++;
+        
+        var tr = $("<tr></tr>", {
+            id: "addr"+newid,
+            "data-id": newid
+        });
+        
+        // loop through each td and create new elements with name of newid
+        $.each($("#tab_logic tbody tr:nth(0) td"), function() {
+            var cur_td = $(this);
+            
+            var children = cur_td.children();
+            
+            // add new td and element if it has a nane
+            if ($(this).data("name") != undefined) {
+                var td = $("<td></td>", {
+                    "data-name": $(cur_td).data("name")
+                });
+                
+                var c = $(cur_td).find($(children[0]).prop('tagName')).clone().val("");
+                c.attr("name", $(cur_td).data("name") + newid);
+                var name10 = c.attr("name");
+                c.attr("id",c.attr("name"));
+                c.val(c.attr('placeholder'));
+                var v = "window";
+                c.appendTo($(td));
+                td.appendTo($(tr));
+                
+                
+
+                
+            } else {
+                var td = $("<td></td>", {
+                    'text': $('#tab_logic tr').length
+                }).appendTo($(tr));
+            }
+
+
+        });
+        
+        // add the new row
+        $(tr).appendTo($('#tab_logic'));
+        $(tr).find("td button.row-remove").on("click", function() {
+             $(this).closest("tr").remove();
+             price -= thisWindowPrice;
+             $("#priceArea").html("Price: " + price);
+
+        });
+        var dims = $("#dimW option:selected").text() + " X " + $("#dimH option:selected" ).text();
+
+        if($("#standExColor option:selected").text() == "Select..."){
+          var extColor = $("#estateExColor option:selected").text();
+          
+          thisWindowPrice += 1;
+        }
+        else{
+          var extColor = $("#standExColor option:selected").text();
+          thisWindowPrice += 2;         
+          
+        }
+        if($("#glass_i89").prop('checked')){
+          var i89 = "i89 Upgrade";
+          
+          thisWindowPrice += 1;
+        }
+        else{
+          var i89 = "";
+        }
+        if($("#glassTemp").prop('checked')){
+          var temped = "Tempered";
+         
+          thisWindowPrice += 1;
+        }
+        else{
+          var temped = "";
+        }
+        var glass = $("#glass1 option:selected").text() + "\n" +i89 + "\n" + $("#glass2 option:selected").text() + "\n" + temped;
+        var grille = $("#grilleType option:selected").text() + "\n" + $("#grilleColor option:selected").text() + "\n" + $("#grillePattern option:selected").text() + "\n" + $("#grilleSash option:selected").text(); 
+        if($("#69").prop('checked')){
+          var jamb69 = '6-9/16"';
+          
+          thisWindowPrice += 10;
+        }
+        else{
+          var jamb69 = "";
+        }
+        if($("#nailFin").prop('checked')){
+          var nailFin = "Nail Fin Applied";
+        }
+        else{
+          var nailFin = "";
+        }
+        if($("#49").prop('checked')){
+          var jamb49 = '4-9/16"';
+          
+          thisWindowPrice += 20;
+        }
+        else{
+          var jamb49 = "";
+        }
+        if($("#hardColorStand option:selected").text() == "Select..."){
+          var hardwareColor = $("#hardColorSpecial option:selected").text();
+          
+          thisWindowPrice += 1;
+        }
+        else{
+          var hardwareColor = $("#hardColorStand option:selected").text();
+          
+          thisWindowPrice += 2;
+        }
+        if($("#intPrime option:selected").text() == "Select..."){
+          var intColor = $("#intStains option:selected").text();
+          
+          thisWindowPrice += 1;
+        }
+        else{
+          var intColor = $("#intPrime option:selected").text();
+          
+          thisWindowPrice += 2;
+        }
+        var installStuff = nailFin + "\n" +  $("#install1 option:selected").text() + "\n" + $("#installMeasure option:selected").text();
+        var jambSize = jamb49 + "\n" + jamb69;
+        var screens = $("#screenColor option:selected").text() + "\n" + $("#screenPattern option:selected").text();
+        var labelWindow = $("#windowLabel").val();
+        
+        $("#tab_logic").find('tr#addr'+newid).find('td:eq(1)').html(dims);
+        $("#tab_logic").find('tr#addr'+newid).find('td:eq(2)').html(extColor);
+        $("#tab_logic").find('tr#addr'+newid).find('td:eq(3)').html(glass);
+        $("#tab_logic").find('tr#addr'+newid).find('td:eq(4)').html(grille);
+        $("#tab_logic").find('tr#addr'+newid).find('td:eq(5)').html(jambSize);
+        $("#tab_logic").find('tr#addr'+newid).find('td:eq(6)').html(screens);
+        $("#tab_logic").find('tr#addr'+newid).find('td:eq(7)').html(hardwareColor);
+        $("#tab_logic").find('tr#addr'+newid).find('td:eq(8)').html(intColor);
+        $("#tab_logic").find('tr#addr'+newid).find('td:eq(9)').html(installStuff);
+        $("#tab_logic").find('tr#addr'+newid).find('td:eq(10)').html($("#tab_logic").find('tr#addr'+newid).find('td:eq(10)').html()+ labelWindow);
+        $('#notes' + newid).val(thisWindowPrice)
+        price += thisWindowPrice;       
+        $("#priceArea").html("Price: " + price);
+
+    if($('#panel9').find('#span9').hasClass('panel-collapsed')){
+        $('#click1').show();
+        $('#panel1').find('.panel-body').slideDown();
+        $("#panel1").find("#span1").removeClass('panel-collapsed');
+        $("#panel1").find('i').addClass('glyphicon-chevron-up').removeClass('glyphicon-chevron-down');
+
+        $('#click2').show();
+        $('#panel2').toggle();
+        $('#panel2').find('.panel-body').slideDown();
+        $("#panel2").find("#span2").removeClass('panel-collapsed');
+        $("#panel2").find('i').removeClass('glyphicon-chevron-up').addClass('glyphicon-chevron-down');
+
+        $('#click3').show();
+        $('#panel3').toggle();
+        $('#panel3').find('.panel-body').slideDown();
+        $("#panel3").find("#span3").removeClass('panel-collapsed');
+        $("#panel3").find('i').removeClass('glyphicon-chevron-up').addClass('glyphicon-chevron-down');
+
+        $('#click4').show();
+        $('#panel4').toggle();
+        $('#panel4').find('.panel-body').slideDown();
+        $("#panel4").find("#span4").removeClass('panel-collapsed');
+        $("#panel4").find('i').removeClass('glyphicon-chevron-up').addClass('glyphicon-chevron-down');
+
+        $('#click5').show();
+        $('#panel5').toggle();
+        $('#panel5').find('.panel-body').slideDown();
+        $("#panel5").find("#span5").removeClass('panel-collapsed');
+        $("#panel5").find('i').removeClass('glyphicon-chevron-up').addClass('glyphicon-chevron-down');
+
+        $('#click6').show();
+        $('#panel6').toggle();
+        $('#panel6').find('.panel-body').slideDown();
+        $("#panel6").find("#span6").removeClass('panel-collapsed');
+        $("#panel6").find('i').removeClass('glyphicon-chevron-up').addClass('glyphicon-chevron-down');
+
+        $('#click7').show();
+        $('#panel7').toggle();
+        $('#panel7').find('.panel-body').slideDown();
+        $("#panel7").find("#span7").removeClass('panel-collapsed');
+        $("#panel7").find('i').removeClass('glyphicon-chevron-up').addClass('glyphicon-chevron-down');
+
+        $('#click8').show();
+        $('#panel8').toggle();
+        $('#panel8').find('.panel-body').slideDown();
+        $("#panel8").find("#span8").removeClass('panel-collapsed');
+        $("#panel8").find('i').removeClass('glyphicon-chevron-up').addClass('glyphicon-chevron-down');
+
+        $('#click9').show();
+        $('#panel9').toggle();
+        $('#panel9').find('.panel-body').slideDown();
+        $("#panel9").find("#span9").removeClass('panel-collapsed');
+        $("#panel9").find('i').removeClass('glyphicon-chevron-up').addClass('glyphicon-chevron-down');
+}   
+
+      $(tr).find("td button.row-edit").on("click", function() {
+            var reDimW = $("#tab_logic").find('tr#addr'+newid).find('td:eq(1)').text().substring(0,2);
+            var reDimH = $("#tab_logic").find('tr#addr'+newid).find('td:eq(1)').text().substring(5,7);
+            var reExtColor = $("#tab_logic").find('tr#addr'+newid).find('td:eq(2)').text();
+            var reGlass = $("#tab_logic").find('tr#addr'+newid).find('td:eq(3)').text().split('\n');
+            var reGrille = $("#tab_logic").find('tr#addr'+newid).find('td:eq(4)').text().split('\n');
+            var reJamb = $("#tab_logic").find('tr#addr'+newid).find('td:eq(5)').text().split('\n');
+            var reScreen = $("#tab_logic").find('tr#addr'+newid).find('td:eq(6)').text().split('\n');
+            var reHardColor = $("#tab_logic").find('tr#addr'+newid).find('td:eq(7)').text();
+            var reInterior = $("#tab_logic").find('tr#addr'+newid).find('td:eq(8)').text();
+            var reInstall = $("#tab_logic").find('tr#addr' + newid).find('td:eq(9)').text().split('\n');
+
+             $("#dimW").val(reDimW);
+             $("#dimH").val(reDimH);
+
+             if(reExtColor == "White" || reExtColor == "Beige" || reExtColor == "Forest Green" || reExtColor == "Black" || reExtColor == "Vanilla" || reExtColor == "Almond" || reExtColor == "Dark Bronze" || reExtColor == "Brick"){
+                $("#standExColor").val(reExtColor);
+                $("#estateExColor").val("Select...");
+             }else{
+              $("#standExColor").val("Select...");
+              $("#estateExColor").val(reExtColor);
+             $("#glass1").val(reGlass[0]);
+             $("#glass2").val(reGlass[2]);
+             }
+             if(reGlass[1] == "i89 Upgrade"){
+              $("#glass_i89").prop('checked', true);
+             }
+             else{
+              $("#glass_i89").prop('checked', false);
+             }
+             if(reGlass[3] == "Tempered"){
+              $("#glassTemp").prop('checked', true);
+             }
+             else{
+              $("#glassTemp").prop('checked', false);
+             }
+
+             $('#grilleType').val(reGrille[0]);
+             $('#grilleColor').val(reGrille[1]);
+             $('#grillePattern').val(reGrille[2]);
+             $('#grilleSash').val(reGrille[3]);
+
+             if(reJamb[0] == "4\-9\/16\""){
+              $('#49').prop('checked',true);
+             }
+             else if(reJamb[1] =="6\-9\/16\""){
+              $('#69').prop('checked',true);
+             }
+
+             $('#screenColor').val(reScreen[0]);
+             $('#screenPattern').val(reScreen[1]);
+
+             if(reHardColor == "White" || reHardColor == "Beige" || reHardColor == "Coppertone"){
+                $("#hardColorStand").val(reHardColor);
+                $("#hardColorSpecial").val("Select...");
+             }else{
+              $("#hardColorStand").val("Select...");
+              $("#hardColorSpecial").val(reHardColor);
+             }
+
+             if(reInterior == "Standard White" || reHardColor == "Custom"){
+                $("#intPrime").val(reInterior);
+                $("#intStains").val("Select...");
+             }else{
+              $("#intPrime").val("Select...");
+              $("#intStains").val(reInterior);
+             }
+             
+             if(reInstall[0] == "Nail Fin Applied"){
+              $('#nailFin').prop('checked',true);
+             }
+             $('#install1').val(reInstall[1]);
+             $('#installMeasure').val(reInstall[2]);
+             
+            newid = $(this).closest("tr").attr('id').substring(4,6);
+
+             
+        });
+        
+
+});
+
+
+
+
+    // Sortable Code
+    var fixHelperModified = function(e, tr) {
+        var $originals = tr.children();
+        var $helper = tr.clone();
+    
+        $helper.children().each(function(index) {
+            $(this).width($originals.eq(index).width())
+        });
+        
+        return $helper;
+    };
+  
+    $(".table-sortable tbody").sortable({
+        helper: fixHelperModified      
+    }).disableSelection();
+
+    $(".table-sortable thead").disableSelection();
+
+
+
+    $("#add_row").trigger("click");
+});
+  </script>
+  <script type="text/javascript">
+  $('.dropdown-menu a').on('click', function(){    
+    $('.dropdown-toggle').html($(this).html() + '<span class="caret"></span>');    
+})</script>
+<script type="text/javascript">
+$('#click1').click(function(){ 
+    $('#panel2').toggle();
+    $("#panel1").find('.panel-body').slideUp();
+    $("#panel1").find("#span1").addClass('panel-collapsed');
+    $("#panel1").find('i').removeClass('glyphicon-chevron-up').addClass('glyphicon-chevron-down');
+    $("#click1").hide();
+});
+</script>
+
+<script type="text/javascript">
+$('#click2').click(function(){ 
+    $('#panel3').toggle();
+    $("#panel2").find('.panel-body').slideUp();
+    $("#panel2").find("#span2").addClass('panel-collapsed');
+    $("#panel2").find('i').removeClass('glyphicon-chevron-up').addClass('glyphicon-chevron-down');
+    $("#click2").hide();
+});
+</script>
+
+<script type="text/javascript">
+$('#click3').click(function(){ 
+    $('#panel4').toggle();
+    $("#panel3").find('.panel-body').slideUp();
+    $("#panel3").find("#span3").addClass('panel-collapsed');
+    $("#panel3").find('i').removeClass('glyphicon-chevron-up').addClass('glyphicon-chevron-down');
+    $("#click3").hide();
+});
+</script>
+
+<script type="text/javascript">
+$('#click4').click(function(){ 
+    $('#panel5').toggle();
+    $("#panel4").find('.panel-body').slideUp();
+    $("#panel4").find("#span4").addClass('panel-collapsed');
+    $("#panel4").find('i').removeClass('glyphicon-chevron-up').addClass('glyphicon-chevron-down');
+    $("#click4").hide();
+});
+</script>
+<script type="text/javascript">
+$('#click5').click(function(){ 
+    $('#panel6').toggle();
+    $("#panel5").find('.panel-body').slideUp();
+    $("#panel5").find("#span5").addClass('panel-collapsed');
+    $("#panel5").find('i').removeClass('glyphicon-chevron-up').addClass('glyphicon-chevron-down');
+    $("#click5").hide();
+});
+</script>
+<script type="text/javascript">
+$('#click6').click(function(){ 
+    $('#panel7').toggle();
+    $("#panel6").find('.panel-body').slideUp();
+    $("#panel6").find("#span6").addClass('panel-collapsed');
+    $("#panel6").find('i').removeClass('glyphicon-chevron-up').addClass('glyphicon-chevron-down');
+    $("#click6").hide();
+});
+</script>
+<script type="text/javascript">
+$('#click7').click(function(){ 
+    $('#panel8').toggle();
+    $("#panel7").find('.panel-body').slideUp();
+    $("#panel7").find("#span7").addClass('panel-collapsed');
+    $("#panel7").find('i').removeClass('glyphicon-chevron-up').addClass('glyphicon-chevron-down');
+    $("#click7").hide();
+});
+</script>
+<script type="text/javascript">
+$('#click8').click(function(){ 
+    $('#panel9').toggle();
+    $("#panel8").find('.panel-body').slideUp();
+    $("#panel8").find("#span8").addClass('panel-collapsed');
+    $("#panel8").find('i').removeClass('glyphicon-chevron-up').addClass('glyphicon-chevron-down');
+    $("#click8").hide();
+});
+</script>
+<script type="text/javascript">
+$('#click9').click(function(){ 
+    $('#panel10').toggle();
+    $("#panel9").find('.panel-body').slideUp();
+    $("#panel9").find("#span9").addClass('panel-collapsed');
+    $("#panel9").find('i').removeClass('glyphicon-chevron-up').addClass('glyphicon-chevron-down');
+    $("#click9").hide();
+});
+</script>
+<script type="text/javascript">
+  
+</script>
+ </body> 
+</html>
